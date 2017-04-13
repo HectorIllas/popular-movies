@@ -12,13 +12,13 @@ import android.support.design.widget.Snackbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.ImageView;
 
 
 //import com.hector.movieapp.data.dummy.DummyContent;
 
 import com.hector.movieapp.data.Movie;
-import com.hector.movieapp.data.dummy.DummyMovies;
+import com.hector.movieapp.data.DummyMovies;
 
 import java.util.List;
 
@@ -70,15 +70,16 @@ public class MovieListActivity extends AppCompatActivity {
     }
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
-        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(DummyMovies.MOVIES));
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setAdapter(new MovieItemRecyclerViewAdapter(DummyMovies.MOVIES));
     }
 
-    public class SimpleItemRecyclerViewAdapter
-            extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.ViewHolder> {
+    public class MovieItemRecyclerViewAdapter
+            extends RecyclerView.Adapter<MovieItemRecyclerViewAdapter.ViewHolder> {
 
         private final List<Movie> mValues;
 
-        public SimpleItemRecyclerViewAdapter(List<Movie> items) {
+        public MovieItemRecyclerViewAdapter(List<Movie> items) {
             mValues = items;
         }
 
@@ -92,8 +93,7 @@ public class MovieListActivity extends AppCompatActivity {
         @Override
         public void onBindViewHolder(final ViewHolder holder, int position) {
             holder.mItem = mValues.get(position);
-            holder.mIdView.setText(mValues.get(position).getId());
-            holder.mContentView.setText(mValues.get(position).getOverview());
+            holder.mImageView.setImageResource(R.drawable.placeholder);
 
             holder.mView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -124,21 +124,17 @@ public class MovieListActivity extends AppCompatActivity {
 
         public class ViewHolder extends RecyclerView.ViewHolder {
             public final View mView;
-            public final TextView mIdView;
-            public final TextView mContentView;
+            public final ImageView mImageView;
+
             public Movie mItem;
 
             public ViewHolder(View view) {
                 super(view);
                 mView = view;
-                mIdView = (TextView) view.findViewById(R.id.id);
-                mContentView = (TextView) view.findViewById(R.id.content);
+                mImageView = (ImageView) view.findViewById(R.id.ivMoviePoster);
             }
 
-            @Override
-            public String toString() {
-                return super.toString() + " '" + mContentView.getText() + "'";
-            }
+
         }
     }
 }

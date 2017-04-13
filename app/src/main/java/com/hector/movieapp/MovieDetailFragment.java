@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.hector.movieapp.data.Movie;
-import com.hector.movieapp.data.dummy.DummyMovies;
+import com.hector.movieapp.data.DummyMovies;
 
 //import com.hector.movieapp.data.dummy.DummyContent;
 

@@ -1,4 +1,4 @@
-package com.hector.movieapp.data.dummy;
+package com.hector.movieapp.data;
 
 import com.hector.movieapp.data.Movie;
 
