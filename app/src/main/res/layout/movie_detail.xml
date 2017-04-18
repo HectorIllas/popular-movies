@@ -6,4 +6,4 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:textIsSelectable="true"
-    tools:context="com.hector.movieapp.MovieDetailFragment" />
+    tools:context="com.hector.movieapp.moviedetail.MovieDetailFragment" />

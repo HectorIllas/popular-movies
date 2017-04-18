@@ -1,4 +1,4 @@
-package com.hector.movieapp;
+package com.hector.movieapp.movies;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,6 +17,9 @@ import android.widget.ImageView;
 
 //import com.hector.movieapp.data.dummy.DummyContent;
 
+import com.hector.movieapp.moviedetail.MovieDetailActivity;
+import com.hector.movieapp.moviedetail.MovieDetailFragment;
+import com.hector.movieapp.R;
 import com.hector.movieapp.data.Movie;
 import com.hector.movieapp.data.DummyMovies;
 

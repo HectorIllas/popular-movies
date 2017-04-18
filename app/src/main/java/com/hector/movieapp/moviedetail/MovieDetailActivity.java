@@ -1,4 +1,4 @@
-package com.hector.movieapp;
+package com.hector.movieapp.moviedetail;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
+
+import com.hector.movieapp.R;
+import com.hector.movieapp.movies.MovieListActivity;
 
 /**
  * An activity representing a single Movie detail screen. This

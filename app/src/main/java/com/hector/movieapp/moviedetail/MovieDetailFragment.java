@@ -1,4 +1,4 @@
-package com.hector.movieapp;
+package com.hector.movieapp.moviedetail;
 
 import android.app.Activity;
 import android.support.design.widget.CollapsingToolbarLayout;
@@ -9,8 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.hector.movieapp.R;
 import com.hector.movieapp.data.Movie;
 import com.hector.movieapp.data.DummyMovies;
+import com.hector.movieapp.movies.MovieListActivity;
 
 //import com.hector.movieapp.data.dummy.DummyContent;
 
