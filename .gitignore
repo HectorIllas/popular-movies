@@ -191,3 +191,6 @@ cmake-build-debug/
 *.xml
 .idea/libraries/animated_vector_drawable_25_1_1.xml
 .idea/libraries/cardview_v7_25_1_1.xml
+.idea/libraries/animated_vector_drawable_25_1_1.xml
+.idea/libraries/appcompat_v7_25_1_1.xml
+*.xml
