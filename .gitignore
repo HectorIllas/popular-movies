@@ -179,7 +179,7 @@ cmake-build-debug/
 
 # *.iml
 # modules.xml
-.idea/
+.idea
 # *.ipr
 
 # Sonarlint plugin
