@@ -179,19 +179,10 @@ cmake-build-debug/
 
 # *.iml
 # modules.xml
-# .idea/misc.xml
+.idea/
 # *.ipr
 
 # Sonarlint plugin
 .idea/sonarlint
 
 # End of https://www.gitignore.io/api/intellij,androidstudio
-.idea/libraries/animated_vector_drawable_25_1_1.xml
-.idea/libraries/appcompat_v7_25_1_1.xml
-*.xml
-.idea/libraries/animated_vector_drawable_25_1_1.xml
-.idea/libraries/cardview_v7_25_1_1.xml
-.idea/libraries/animated_vector_drawable_25_1_1.xml
-.idea/libraries/appcompat_v7_25_1_1.xml
-*.xml
-*.xml
